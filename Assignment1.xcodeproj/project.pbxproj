@@ -14,6 +14,9 @@
 		2B0A261D2151A54500A41CDA /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A261C2151A54500A41CDA /* Assignment1Tests.swift */; };
 		2B0A26282151A54500A41CDA /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A26272151A54500A41CDA /* Assignment1UITests.swift */; };
 		2B0D2CCB2151FE20006270B6 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D2CCA2151FE20006270B6 /* MovieCell.swift */; };
+		2B22EBFF21547644000FB97C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22EBFE21547644000FB97C /* DetailViewController.swift */; };
+		2B22EC012154AC35000FB97C /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22EC002154AC35000FB97C /* PosterCell.swift */; };
+		2B22EC032154AE7E000FB97C /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22EC022154AE7E000FB97C /* SuperheroViewController.swift */; };
 		2B3E8AE12151DFC8001E384A /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E8AE02151DFC8001E384A /* NowPlayingViewController.swift */; };
 		3F44EF86BC5E8FD04F65F076 /* Pods_Assignment1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA74CC402D2CE7E8D028CF6 /* Pods_Assignment1.framework */; };
 		903786999ABE54FED50A29D8 /* Pods_Assignment1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198745F0DC3FF2ECDC8F70F5 /* Pods_Assignment1UITests.framework */; };
@@ -53,6 +56,9 @@
 		2B0A26272151A54500A41CDA /* Assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITests.swift; sourceTree = "<group>"; };
 		2B0A26292151A54500A41CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0D2CCA2151FE20006270B6 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		2B22EBFE21547644000FB97C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2B22EC002154AC35000FB97C /* PosterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		2B22EC022154AE7E000FB97C /* SuperheroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
 		2B3E8AE02151DFC8001E384A /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		3DA911C2852A1BBCE036B28E /* Pods-Assignment1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment1UITests/Pods-Assignment1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2F2A2EE5EC1B5BFA2AE28B /* Pods-Assignment1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment1Tests/Pods-Assignment1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,13 +122,13 @@
 		2B0A26062151A54500A41CDA /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				2B22EBFD215475AE000FB97C /* Views */,
+				2B22EBFC2154758E000FB97C /* ViewControllers */,
 				2B0A26072151A54500A41CDA /* AppDelegate.swift */,
 				2B0A260B2151A54500A41CDA /* Main.storyboard */,
 				2B0A260E2151A54500A41CDA /* Assets.xcassets */,
 				2B0A26102151A54500A41CDA /* LaunchScreen.storyboard */,
 				2B0A26132151A54500A41CDA /* Info.plist */,
-				2B3E8AE02151DFC8001E384A /* NowPlayingViewController.swift */,
-				2B0D2CCA2151FE20006270B6 /* MovieCell.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -143,6 +149,25 @@
 				2B0A26292151A54500A41CDA /* Info.plist */,
 			);
 			path = Assignment1UITests;
+			sourceTree = "<group>";
+		};
+		2B22EBFC2154758E000FB97C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B3E8AE02151DFC8001E384A /* NowPlayingViewController.swift */,
+				2B22EBFE21547644000FB97C /* DetailViewController.swift */,
+				2B22EC022154AE7E000FB97C /* SuperheroViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2B22EBFD215475AE000FB97C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D2CCA2151FE20006270B6 /* MovieCell.swift */,
+				2B22EC002154AC35000FB97C /* PosterCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		91C14D83DC6DD72F5538F353 /* Frameworks */ = {
@@ -307,15 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Assignment1-checkManifestLockResult.txt",
 			);
@@ -329,15 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Assignment1Tests-checkManifestLockResult.txt",
 			);
@@ -351,16 +368,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Assignment1/Pods-Assignment1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -375,15 +388,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Assignment1UITests-checkManifestLockResult.txt",
 			);
@@ -400,8 +409,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3E8AE12151DFC8001E384A /* NowPlayingViewController.swift in Sources */,
+				2B22EC012154AC35000FB97C /* PosterCell.swift in Sources */,
+				2B22EC032154AE7E000FB97C /* SuperheroViewController.swift in Sources */,
 				2B0A26082151A54500A41CDA /* AppDelegate.swift in Sources */,
 				2B0D2CCB2151FE20006270B6 /* MovieCell.swift in Sources */,
+				2B22EBFF21547644000FB97C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
