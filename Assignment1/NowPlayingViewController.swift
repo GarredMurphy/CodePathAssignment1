@@ -19,7 +19,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     var refreshControl: UIRefreshControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 170
+        
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
